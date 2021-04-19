@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bolinha</title>
+  </head>
+  <body>
+    <input id="txtBolinha" type="text" />
+    <button onclick="irParaPaginaB()">Ir para página B</button>
+
+    <script>
+      function irParaPaginaB() {
+        let informacao = document.getElementById("txtBolinha").value;
+
+        // window.localStorage.setItem("informacaoA", informacao);
+        window.sessionStorage.setItem("informacaoA", informacao);
+
+        window.location = "./B.html";
+      }
+    </script>
+  </body>
+</html>

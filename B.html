@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="informacaoLocalStorage"></div>
+    <script>
+      let infoDiv = document.getElementById("informacaoLocalStorage");
+
+    //   let informacaoA = window.localStorage.getItem("informacaoA");
+    let informacaoA = window.sessionStorage.getItem("informacaoA");
+
+      infoDiv.innerText = informacaoA;
+    </script>
+  </body>
+</html>
